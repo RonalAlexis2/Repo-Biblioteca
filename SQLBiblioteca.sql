@@ -22,7 +22,7 @@ CREATE TABLE biblioteca (
 CREATE TABLE libro (
     id_libro int identity,
     edicion Decimal,
-	año date,
+	anio date,
 	titulo varchar (250),
     primary key (id_libro),
 	autor int FOREIGN KEY REFERENCES autor(id_autor),
