@@ -22,7 +22,7 @@ CREATE TABLE biblioteca (
 CREATE TABLE libro (
     id_libro int identity,
     edicion Decimal,
-	anio date,
+	years date,
 	titulo varchar (250),
     primary key (id_libro),
 	autor int FOREIGN KEY REFERENCES autor(id_autor),
@@ -30,7 +30,7 @@ CREATE TABLE libro (
 	seccion int FOREIGN KEY REFERENCES seccion(id_seccion)
 	);
 
-	INSERT INTO libro (edicion, año, titulo,autor,seccion,biblioteca)
+	INSERT INTO libro (edicion, years, titulo,autor,seccion,biblioteca)
 VALUES ('10.0','01-18-2023','a','1','1','1');
 
 INSERT INTO biblioteca (name_biblioteca)
